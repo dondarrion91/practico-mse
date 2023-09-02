@@ -5,8 +5,6 @@ require('dotenv').config()
 const app = express();
 
 //mongodb
-console.log(process.env)
-console.log(process.env.MONGO_HOST)
 mongoose.connect(`mongodb://${process.env.MONGO_HOST}:27017/todo_express`,
     {
         useNewUrlParser: true,
